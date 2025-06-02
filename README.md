@@ -30,7 +30,7 @@ $ bazel build :java-maven
 Create Bazel dependencies XML file:
 
 ```
-$ bazel query "deps(//app/package:target)" --noimplicit_deps --output xml > bazel_deps.xml
+$ bazel query "deps(//:container_test)" --noimplicit_deps --output xml > bazel_deps.xml
 ```
 
 Create a CycloneDX SBOM:
